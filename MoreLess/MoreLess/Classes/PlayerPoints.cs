@@ -10,12 +10,9 @@ namespace MoreLess
     {
         public int PointsSum;
         public string PlayerId;
-        public PlayerPoints(int _HowMuch) {
-            PointsSum += _HowMuch;
-        }
-        public PlayerPoints(string _PlayerId)
-        {
-            PlayerId = _PlayerId;
-        }
+        public PlayerPoints(int _HowMuch) => PointsSum = _HowMuch;
+        public PlayerPoints(string _PlayerId) => PlayerId = _PlayerId;
+
+        public void ModifyPointsSum(int _Amount) => PointsSum = _Amount;
     }
 }
