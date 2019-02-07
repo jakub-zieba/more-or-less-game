@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="GameWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock x:Name="questionDisplayBox" Text="{Binding Path=QuestionText, UpdateSourceTrigger=PropertyChanged}" />
+        <TextBlock x:Name="questionDisplayBox" />
         <Button 
             Margin="200,200,0,0" 
             HorizontalAlignment="Left"
