@@ -7,11 +7,12 @@
         mc:Ignorable="d"
         Title="GameWindow" Height="450" Width="800">
     <Grid>
+        <TextBlock Text="{Binding Path=Debt, UpdateSourceTrigger=PropertyChanged}" />
         <Button 
             Margin="200,200,0,0" 
             HorizontalAlignment="Left"
             VerticalAlignment="Center" 
-            Click="">
+            Click="Less">
 
             Less
         </Button>
@@ -19,7 +20,7 @@
             Margin="0,200,200,0" 
             HorizontalAlignment="Right"
             VerticalAlignment="Center" 
-            Click="">
+            Click="Equal">
 
             More
         </Button>
@@ -27,7 +28,7 @@
             Margin="0,200,0,0" 
             HorizontalAlignment="Center"
             VerticalAlignment="Center" 
-            Click="">
+            Click="More">
 
             Equal
         </Button>

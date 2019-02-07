@@ -19,9 +19,12 @@ namespace MoreLess
     /// </summary>
     public partial class GameWindow : Window
     {
+
         public GameWindow()
         {
             InitializeComponent();
+            this.DataContext = this;
+            this.Debt = "test";
         }
         private void Less(object sender, RoutedEventArgs e)
         {
@@ -35,5 +38,13 @@ namespace MoreLess
         {
 
         }
+        public string Debt
+        {
+            get { return (string)GetValue(DebtProperty); }
+            set { SetValue(DebtProperty, value); }
+        }
+        public static readonly DependencyProperty DebtProperty =
+            DependencyProperty.Register("Debt", typeof(string), typeof(MainWindow), new PropertyMetadata(string.Empty));
+
     }
 }
