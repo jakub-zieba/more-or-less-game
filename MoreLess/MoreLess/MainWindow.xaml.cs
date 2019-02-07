@@ -24,5 +24,19 @@ namespace MoreLess
         {
             InitializeComponent();
         }
+        private void Play(object sender, MouseEventArgs e)
+        {
+            GameWindow gameWin = new GameWindow();
+            gameWin.Show();
+            this.Close();
+        }
+        private void Credits(object sender, MouseEventArgs e)
+        {
+
+        }
+        private void Exit(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }

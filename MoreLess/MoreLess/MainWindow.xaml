@@ -1,12 +1,42 @@
-﻿<Window x:Class="MoreLess.MainWindow"
+﻿<Window 
+        
+        x:Class="warships_cshrp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MoreLess"
+        xmlns:local="clr-namespace:warships_cshrp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="400" Width="600" WindowState="Normal" >
+    <!--windowState = maximixed zeby ustawic na caly ekran-->
+    <Grid Margin="0,-200,0,0" x:Name="MainGrid" VerticalAlignment="Center">
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18">
+        More or Less ?
+        </TextBlock>
+        <Button
+            Margin="0,101,0,-100" 
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Center"
+            Click="Play">
+
+            Play game
+        </Button>
+        <Button 
+            Margin="0,125,0,-137" 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" 
+            Click="Credits">
+
+            Credits
+        </Button>
+        <Button 
+            Margin="0,150,0,-177" 
+            HorizontalAlignment="Center"
+            Click="Exit" 
+            VerticalAlignment="Center">
+            Exit
+        </Button>
+
     </Grid>
+
 </Window>
