@@ -22,21 +22,21 @@ namespace MoreLess
     {
         public MainWindow()
         {
-            InitializeComponent();
+           InitializeComponent();
         }
-        private void Play(object sender, MouseEventArgs e)
+        private void Play(object sender, RoutedEventArgs e)
         {
             GameWindow gameWin = new GameWindow();
             gameWin.Show();
             this.Close();
         }
-        private void Credits(object sender, MouseEventArgs e)
+        private void Credits(object sender, RoutedEventArgs e)
         {
 
         }
-        private void Exit(object sender, MouseEventArgs e)
+        private void Exit(object sender, RoutedEventArgs e)
         {
-
+            App.Current.Shutdown();
         }
     }
 }
