@@ -27,6 +27,8 @@ namespace MoreLess
             InitializeComponent();
             display = new testSettingQuestion();
             this.DataContext = this;
+            DisplayQuestion();
+            questionDisplayBox.Text = "dwadawdadwd";
 
         }
 
@@ -34,10 +36,10 @@ namespace MoreLess
         {
             if (next==true)
             {
-                this.QuestionText = display.Metoda(++Count);
+                questionDisplayBox.Text = display.Metoda(++Count);
                 next = false;
             }
-            else this.QuestionText = display.Metoda(0);
+            else questionDisplayBox.Text = display.Metoda(0);
         }
 
         private void Less(object sender, RoutedEventArgs e)
@@ -52,7 +54,6 @@ namespace MoreLess
             DisplayQuestion();
 
             next = true;
-            Trace.WriteLine("text");
         }
         private void More(object sender, RoutedEventArgs e)
         {
@@ -61,13 +62,5 @@ namespace MoreLess
             next = true;
 
         }
-        public string QuestionText
-        {
-            get { return (string)GetValue(QuestionProperty); }
-            set { SetValue(QuestionProperty, value); }
-        }
-        public static readonly DependencyProperty QuestionProperty =
-            DependencyProperty.Register("Debt", typeof(string), typeof(MainWindow), new PropertyMetadata(string.Empty));
-
     }
 }
