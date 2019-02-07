@@ -26,10 +26,8 @@ namespace MoreLess
         {
             InitializeComponent();
             display = new testSettingQuestion();
-            this.DataContext = this;
             DisplayQuestion();
-            questionDisplayBox.Text = "dwadawdadwd";
-
+            next = true;
         }
 
         private void DisplayQuestion()
@@ -44,23 +42,18 @@ namespace MoreLess
 
         private void Less(object sender, RoutedEventArgs e)
         {
-            next = true;
             DisplayQuestion();
-
-
+            next = true;
         }
         private void Equal(object sender, RoutedEventArgs e)
         {
             DisplayQuestion();
-
             next = true;
         }
         private void More(object sender, RoutedEventArgs e)
         {
             DisplayQuestion();
-
             next = true;
-
         }
     }
 }
