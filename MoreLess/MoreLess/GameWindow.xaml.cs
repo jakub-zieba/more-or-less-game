@@ -11,7 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using System.Diagnostics;
 namespace MoreLess
 {
     /// <summary>
@@ -20,23 +20,45 @@ namespace MoreLess
     public partial class GameWindow : Window
     {
         testSettingQuestion display;
+        int Count = 0;
+        bool next=false;
         public GameWindow()
         {
-            display = new testSettingQuestion();
             InitializeComponent();
+            display = new testSettingQuestion();
             this.DataContext = this;
-            this.Debt = display.Metoda();
+
         }
+
+        private void DisplayQuestion()
+        {
+            if (next==true)
+            {
+                this.Debt = display.Metoda(++Count);
+                next = false;
+            }
+            else this.Debt = display.Metoda(0);
+        }
+
         private void Less(object sender, RoutedEventArgs e)
         {
+            next = true;
+            DisplayQuestion();
+
 
         }
         private void Equal(object sender, RoutedEventArgs e)
         {
+            DisplayQuestion();
 
+            next = true;
+            Trace.WriteLine("text");
         }
         private void More(object sender, RoutedEventArgs e)
         {
+            DisplayQuestion();
+
+            next = true;
 
         }
         public string Debt

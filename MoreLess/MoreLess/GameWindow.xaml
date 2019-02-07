@@ -20,7 +20,7 @@
             Margin="0,200,200,0" 
             HorizontalAlignment="Right"
             VerticalAlignment="Center" 
-            Click="Equal">
+            Click="More">
 
             More
         </Button>
@@ -28,7 +28,7 @@
             Margin="0,200,0,0" 
             HorizontalAlignment="Center"
             VerticalAlignment="Center" 
-            Click="More">
+            Click="Equal">
 
             Equal
         </Button>
