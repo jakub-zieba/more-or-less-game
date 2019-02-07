@@ -34,10 +34,10 @@ namespace MoreLess
         {
             if (next==true)
             {
-                this.Debt = display.Metoda(++Count);
+                this.QuestionText = display.Metoda(++Count);
                 next = false;
             }
-            else this.Debt = display.Metoda(0);
+            else this.QuestionText = display.Metoda(0);
         }
 
         private void Less(object sender, RoutedEventArgs e)
@@ -61,12 +61,12 @@ namespace MoreLess
             next = true;
 
         }
-        public string Debt
+        public string QuestionText
         {
-            get { return (string)GetValue(DebtProperty); }
-            set { SetValue(DebtProperty, value); }
+            get { return (string)GetValue(QuestionProperty); }
+            set { SetValue(QuestionProperty, value); }
         }
-        public static readonly DependencyProperty DebtProperty =
+        public static readonly DependencyProperty QuestionProperty =
             DependencyProperty.Register("Debt", typeof(string), typeof(MainWindow), new PropertyMetadata(string.Empty));
 
     }
