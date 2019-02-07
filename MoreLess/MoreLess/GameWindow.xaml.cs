@@ -34,10 +34,10 @@ namespace MoreLess
         {
             if (next==true)
             {
-                questionDisplayBox.Text = display.Metoda(++Count);
+                questionDisplayBox.Text = display.Question(++Count);
                 next = false;
             }
-            else questionDisplayBox.Text = display.Metoda(0);
+            else questionDisplayBox.Text = display.Question(0);
         }
 
         private void Less(object sender, RoutedEventArgs e)
