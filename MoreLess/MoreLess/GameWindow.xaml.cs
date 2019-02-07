@@ -19,12 +19,13 @@ namespace MoreLess
     /// </summary>
     public partial class GameWindow : Window
     {
-
+        testSettingQuestion display;
         public GameWindow()
         {
+            display = new testSettingQuestion();
             InitializeComponent();
             this.DataContext = this;
-            this.Debt = "test";
+            this.Debt = display.Metoda();
         }
         private void Less(object sender, RoutedEventArgs e)
         {
