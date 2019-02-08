@@ -38,21 +38,26 @@ namespace MoreLess
 
         private void DisplayQuestion()
         {
-            if (next==true)
+            if (next == true)
             {
                 ++count;
-                if(display.getQuestion(count) == null)
+                if (display.GetQuestion(count) == null)
                 {
-                    showTheEnd(points.PointsSum);
+                    ShowTheEnd(points.PointsSum);
                     return;
                 }
-                questionDisplayBox.Text = display.getQuestion(count).text;
-                val = display.getQuestion(count).value;
-                correctAnswer = display.getQuestion(count).correctAnswer;
+                questionDisplayBox.Text = display.GetQuestion(count).text;
+                val = display.GetQuestion(count).value;
+                correctAnswer = display.GetQuestion(count).correctAnswer;
 
                 next = false;
             }
-            else questionDisplayBox.Text = display.getQuestion(0).text;
+            else
+            {
+                questionDisplayBox.Text = display.GetQuestion(0).text;
+                val = display.GetQuestion(count).value;
+                correctAnswer = display.GetQuestion(0).correctAnswer;
+            }
         }
 
         private void Less(object sender, RoutedEventArgs e)
@@ -98,7 +103,7 @@ namespace MoreLess
             next = true;
         }
 
-        private void showTheEnd(int points)
+        private void ShowTheEnd(int points)
         {
             EndWindow endWin = new EndWindow(points);
             endWin.Show();

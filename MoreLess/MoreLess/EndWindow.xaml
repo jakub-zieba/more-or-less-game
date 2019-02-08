@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MoreLess"
         mc:Ignorable="d"
-        Title="EndWindow" Height="300" Width="300">
+        Title="EndWindow" Height="500" Width="700">
     <Grid>
         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Margin="42,83,41.6,163.4">
         Game finished, your score:
