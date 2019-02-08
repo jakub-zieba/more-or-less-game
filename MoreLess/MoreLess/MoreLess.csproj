@@ -54,12 +54,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CreditsWindow.xaml.cs">
+      <DependentUpon>CreditsWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EndWindow.xaml.cs">
       <DependentUpon>EndWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Classes\PlayerPoints.cs" />
     <Compile Include="Classes\QuestionTemplate.cs" />
     <Compile Include="Classes\SettingQuestion.cs" />
+    <Page Include="CreditsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EndWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

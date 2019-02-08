@@ -1,0 +1,28 @@
+﻿<Window x:Class="MoreLess.CreditsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MoreLess"
+        mc:Ignorable="d"
+        Title="CreditsWindow" Height="500" Width="700">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Margin="42,83,41.6,163.4">
+        Authors:
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Margin="42,163,41.6,163.4">
+        Jakub Zięba, Dawid Sieczka, Kamil Bierski
+        </TextBlock>
+        <TextBlock x:Name="scoreDisplayBox" 
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+                   />
+        <Button 
+            Margin="136,226,135.6,25.4" 
+            HorizontalAlignment="Center"
+            Click="Exit" 
+            VerticalAlignment="Center" RenderTransformOrigin="0.287,-2.786">
+            Exit
+        </Button>
+    </Grid>
+</Window>

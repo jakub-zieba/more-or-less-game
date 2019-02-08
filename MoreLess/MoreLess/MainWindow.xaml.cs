@@ -32,7 +32,9 @@ namespace MoreLess
         }
         private void Credits(object sender, RoutedEventArgs e)
         {
-
+            CreditsWindow creditsWin = new CreditsWindow();
+            creditsWin.Show();
+            this.Close();
         }
         private void Exit(object sender, RoutedEventArgs e)
         {

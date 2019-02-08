@@ -7,7 +7,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MoreLess"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="600" WindowState="Normal" >
+        Title="MainWindow" Height="500" Width="700" WindowState="Normal" >
     <!--windowState = maximixed zeby ustawic na caly ekran-->
     <Grid Margin="0,-200,0,0" x:Name="MainGrid" VerticalAlignment="Center">
         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18">
