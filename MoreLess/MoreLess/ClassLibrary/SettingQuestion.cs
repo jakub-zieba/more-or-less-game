@@ -41,6 +41,11 @@ namespace MoreLess
             GenerateQuestionsToServeTable();
         }
 
+        public QuestionTemplate GetQuestion(int i)
+        {
+            return questionsToServe[i];
+        }
+
         private void GenerateQuestionsToServeTable()
         {
             questionsToServe = new QuestionTemplate[usedQuestionsAmount + 1];
@@ -55,13 +60,8 @@ namespace MoreLess
 
         }
 
-        public QuestionTemplate GetQuestion(int i)
-        {
-            return questionsToServe[i];
-        }
-
         // https://codereview.stackexchange.com/questions/61338/generate-random-numbers-without-repetitions
-        public static List<int> GenerateRandom(int count, int max)
+        private static List<int> GenerateRandom(int count, int max)
         {
             Random random = new Random();
             // generate count random values.

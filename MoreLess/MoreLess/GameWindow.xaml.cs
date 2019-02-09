@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Diagnostics;
+using System.Timers;
 
 namespace MoreLess
 {
@@ -23,21 +24,44 @@ namespace MoreLess
         SettingQuestion display;
         PlayerPoints points;
         Answer correctAnswer;
-        Answer currentAnswer;
+        //Answer currentAnswer;
         int count = 0;
         int val = 0;
+        int timeForAnswer = 20;
         bool next=false;
+        //private TimeSpan startTimeSpan = TimeSpan.Zero;
+        //private TimeSpan periodTimeSpan = TimeSpan.FromSeconds(1);
         public GameWindow()
         {
             InitializeComponent();
             display = new SettingQuestion();
+            points = new PlayerPoints(0);
             DisplayQuestion();
             next = true;
-            points = new PlayerPoints(0);
+
+
+            /*var timer = new System.Threading.Timer((e) =>
+            {
+                CountDown();
+            }, null, startTimeSpan, periodTimeSpan);*/
         }
+
+      /*  private void CountDown()
+        {
+            timeForAnswer--;
+            timerDisplayBox.Text = timeForAnswer.ToString();
+            if (timeForAnswer == 0)
+            {
+                timeForAnswer = 20;
+                next = true;
+                DisplayQuestion();
+            }
+        }*/
 
         private void DisplayQuestion()
         {
+            timerDisplayBox.Text = timeForAnswer.ToString();
+
             if (next == true)
             {
                 ++count;
@@ -62,45 +86,54 @@ namespace MoreLess
 
         private void Less(object sender, RoutedEventArgs e)
         {
-            currentAnswer = Answer.less;
-            if (currentAnswer == correctAnswer)
-            {
-                points.ModifyPointsSum(val);
-            }
-            else
-            {
-                points.ModifyPointsSum(-val);
-            }
+            SetActionResults(CheckAnswer(Answer.less));
             DisplayQuestion();
             next = true;
         }
         private void Equal(object sender, RoutedEventArgs e)
         {
-            currentAnswer = Answer.equals;
-            if (currentAnswer == correctAnswer)
-            {
-                points.ModifyPointsSum(val);
-            }
-            else
-            {
-                points.ModifyPointsSum(-val);
-            }
+            SetActionResults(CheckAnswer(Answer.equals));
             DisplayQuestion();
             next = true;
         }
         private void More(object sender, RoutedEventArgs e)
         {
-            currentAnswer = Answer.more;
+            SetActionResults(CheckAnswer(Answer.more));
+            DisplayQuestion();
+            next = true;
+        }
+
+        private bool CheckAnswer(Answer currentAnswer)
+        {
             if (currentAnswer == correctAnswer)
             {
-                points.ModifyPointsSum(val);
+                return true;
             }
             else
             {
-                points.ModifyPointsSum(-val);
+                return false;
             }
-            DisplayQuestion();
-            next = true;
+        }
+        
+        private void SetActionResults(bool rightOrWrong)
+        {
+            string message = "";
+            if (rightOrWrong)
+            {
+                //Add players points
+                points.ModifyPointsSum(val);
+                // Configure message box
+                message = "Good!";
+            }
+            else
+            {
+                //Decrease players points amount
+                points.ModifyPointsSum(-val);
+                // Configure message box
+                message = "Wrong!";
+            }
+            // Show message box
+            MessageBoxResult result = MessageBox.Show(message);
         }
 
         private void ShowTheEnd(int points)
