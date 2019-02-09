@@ -15,7 +15,14 @@
             HorizontalAlignment="Center"
                    />
         <Button 
-            Margin="136,226,135.6,25.4" 
+            Margin="16,226,135.6,25.4" 
+            HorizontalAlignment="Center"
+            Click="MainMenu" 
+            VerticalAlignment="Center" RenderTransformOrigin="0.287,-2.786">
+            Main menu
+        </Button>
+        <Button 
+            Margin="286,226,135.6,25.4" 
             HorizontalAlignment="Center"
             Click="Exit" 
             VerticalAlignment="Center" RenderTransformOrigin="0.287,-2.786">

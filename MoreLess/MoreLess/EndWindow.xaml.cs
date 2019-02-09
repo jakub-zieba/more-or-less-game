@@ -16,6 +16,7 @@ namespace MoreLess
 {
     /// <summary>
     /// Logika interakcji dla klasy EndWindow.xaml
+    /// Ekran podsumowania rozgrywki
     /// </summary>
     public partial class EndWindow : Window
     {
@@ -23,6 +24,12 @@ namespace MoreLess
         {
             InitializeComponent();
             scoreDisplayBox.Text = points.ToString();
+        }
+        private void MainMenu(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWin = new MainWindow();
+            mainWin.Show();
+            this.Close();
         }
         private void Exit(object sender, RoutedEventArgs e)
         {

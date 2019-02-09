@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ClassLibrary">
+      <HintPath>..\..\Class Library\ClassLibrary\ClassLibrary\bin\Debug\ClassLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -60,9 +63,6 @@
     <Compile Include="EndWindow.xaml.cs">
       <DependentUpon>EndWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ClassLibrary\PlayerPoints.cs" />
-    <Compile Include="ClassLibrary\QuestionTemplate.cs" />
-    <Compile Include="ClassLibrary\SettingQuestion.cs" />
     <Page Include="CreditsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -117,8 +117,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ApplicationInterface\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

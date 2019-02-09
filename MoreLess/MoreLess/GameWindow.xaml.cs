@@ -13,24 +13,23 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Diagnostics;
 using System.Timers;
+using ClassLibrary;
 
 namespace MoreLess
 {
     /// <summary>
     /// Logika interakcji dla klasy GameWindow.xaml
+    /// Główny ekran odpowiadający za prezentację gry
     /// </summary>
     public partial class GameWindow : Window
     {
         QuestionDisplayer display;
         PlayerPoints points;
         Answer correctAnswer;
-        //Answer currentAnswer;
         int count = 0;
         int val = 0;
         int timeForAnswer = 20;
         bool next=false;
-        //private TimeSpan startTimeSpan = TimeSpan.Zero;
-        //private TimeSpan periodTimeSpan = TimeSpan.FromSeconds(1);
         public GameWindow()
         {
             InitializeComponent();
@@ -38,25 +37,7 @@ namespace MoreLess
             points = new PlayerPoints(0);
             DisplayQuestion();
             next = true;
-
-
-            /*var timer = new System.Threading.Timer((e) =>
-            {
-                CountDown();
-            }, null, startTimeSpan, periodTimeSpan);*/
         }
-
-      /*  private void CountDown()
-        {
-            timeForAnswer--;
-            timerDisplayBox.Text = timeForAnswer.ToString();
-            if (timeForAnswer == 0)
-            {
-                timeForAnswer = 20;
-                next = true;
-                DisplayQuestion();
-            }
-        }*/
 
         private void DisplayQuestion()
         {

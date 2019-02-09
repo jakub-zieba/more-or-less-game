@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MoreLess
+namespace ClassLibrary
 {
-    class PlayerPoints
+    /// <summary>
+    /// Reprezentacja punktacji gracza
+    /// </summary>
+    public class PlayerPoints
     {
         public int PointsSum;
         public string PlayerId;

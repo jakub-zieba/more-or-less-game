@@ -4,8 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MoreLess
+namespace ClassLibrary
 {
+    /// <summary>
+    /// Zawiera wzór dla pytań używanych w całej aplikacji a także enum będący podstawą
+    /// mechanik które funkcjonują w klasach operujących na pytaniach
+    /// </summary>
     public enum Answer
     {
         less,

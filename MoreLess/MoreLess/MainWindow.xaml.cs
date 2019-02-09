@@ -17,6 +17,7 @@ namespace MoreLess
 {
     /// <summary>
     /// Logika interakcji dla klasy MainWindow.xaml
+    /// Ekran startowy
     /// </summary>
     public partial class MainWindow : Window
     {

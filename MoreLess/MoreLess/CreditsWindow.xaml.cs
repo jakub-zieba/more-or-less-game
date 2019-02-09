@@ -16,6 +16,7 @@ namespace MoreLess
 {
     /// <summary>
     /// Logika interakcji dla klasy CreditsWindow.xaml
+    /// Ekran wyświetlający twórcow
     /// </summary>
     public partial class CreditsWindow : Window
     {
