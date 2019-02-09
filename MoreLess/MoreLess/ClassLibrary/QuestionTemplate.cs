@@ -25,6 +25,5 @@ namespace MoreLess
             value = _value;
 
         }
-
     }
 }

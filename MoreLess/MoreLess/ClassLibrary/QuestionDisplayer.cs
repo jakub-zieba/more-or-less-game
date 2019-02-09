@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Collections;
 namespace MoreLess
 {
-    public class SettingQuestion
+    public class QuestionDisplayer
     {
         private QuestionTemplate[] questionBase;
         private QuestionTemplate[] questionsToServe;
@@ -18,7 +18,7 @@ namespace MoreLess
         Answer more = Answer.more;
         
 
-        public SettingQuestion()
+        public QuestionDisplayer()
         {
             // TODO zamiast statycznie wypełnionej tablicy skorzystać z bazy np
             questionBase = new QuestionTemplate[possibleQuestionsAmount];
@@ -44,6 +44,18 @@ namespace MoreLess
         public QuestionTemplate GetQuestion(int i)
         {
             return questionsToServe[i];
+        }
+
+        public bool CheckAnswer(Answer _currentAnswer, Answer _correctAnswer)
+        {
+            if (_currentAnswer == _correctAnswer)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         private void GenerateQuestionsToServeTable()

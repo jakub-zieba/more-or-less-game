@@ -21,7 +21,7 @@ namespace MoreLess
     /// </summary>
     public partial class GameWindow : Window
     {
-        SettingQuestion display;
+        QuestionDisplayer display;
         PlayerPoints points;
         Answer correctAnswer;
         //Answer currentAnswer;
@@ -34,7 +34,7 @@ namespace MoreLess
         public GameWindow()
         {
             InitializeComponent();
-            display = new SettingQuestion();
+            display = new QuestionDisplayer();
             points = new PlayerPoints(0);
             DisplayQuestion();
             next = true;
@@ -86,33 +86,21 @@ namespace MoreLess
 
         private void Less(object sender, RoutedEventArgs e)
         {
-            SetActionResults(CheckAnswer(Answer.less));
+            SetActionResults(display.CheckAnswer(Answer.less, correctAnswer));
             DisplayQuestion();
             next = true;
         }
         private void Equal(object sender, RoutedEventArgs e)
         {
-            SetActionResults(CheckAnswer(Answer.equals));
+            SetActionResults(display.CheckAnswer(Answer.equals, correctAnswer));
             DisplayQuestion();
             next = true;
         }
         private void More(object sender, RoutedEventArgs e)
         {
-            SetActionResults(CheckAnswer(Answer.more));
+            SetActionResults(display.CheckAnswer(Answer.more, correctAnswer));
             DisplayQuestion();
             next = true;
-        }
-
-        private bool CheckAnswer(Answer currentAnswer)
-        {
-            if (currentAnswer == correctAnswer)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
         }
         
         private void SetActionResults(bool rightOrWrong)
@@ -122,14 +110,12 @@ namespace MoreLess
             {
                 //Add players points
                 points.ModifyPointsSum(val);
-                // Configure message box
                 message = "Good!";
             }
             else
             {
                 //Decrease players points amount
                 points.ModifyPointsSum(-val);
-                // Configure message box
                 message = "Wrong!";
             }
             // Show message box
