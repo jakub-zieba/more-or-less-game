@@ -50,7 +50,6 @@
     <Compile Include="QuestionBase.cs" />
     <Compile Include="QuestionDisplayer.cs" />
     <Compile Include="QuestionTemplate.cs" />
-    <Compile Include="README.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md">
