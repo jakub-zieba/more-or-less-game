@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DynamicHelp xmlns="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:schemaLocation="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd">	
+   <LINKGROUP ID="ClassLibrary" Title="SOLUTION-WIDE PROPERTIES Reference Help" Priority="2100">
+      <GLYPH Expanded="vs:/ctxhelp_show.gif" Collapsed="vs:/ctxhelp_hide.gif"/>
+   </LINKGROUP>
+
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.Answer" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_000000000000000F.html" LinkGroup="ClassLibrary">Answer Enumeration</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.QuestionDisplayer.CheckAnswer" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_000000000000000E.html" LinkGroup="ClassLibrary">CheckAnswer Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_0000000000000000.html" LinkGroup="ClassLibrary">ClassLibrary Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.QuestionDisplayer.GetQuestion" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_000000000000000D.html" LinkGroup="ClassLibrary">GetQuestion Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.PlayerPoints.ModifyPointsSum" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_0000000000000006.html" LinkGroup="ClassLibrary">ModifyPointsSum Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.PlayerPoints.PlayerId" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_0000000000000003.html" LinkGroup="ClassLibrary">PlayerId Field</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.PlayerPoints.PlayerPoints" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_0000000000000004_overloads--.html" LinkGroup="ClassLibrary">PlayerPoints Constructor</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.PlayerPoints.PlayerPoints" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_0000000000000005_overloads--.html" LinkGroup="ClassLibrary">PlayerPoints Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.PlayerPoints" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_0000000000000001.html" LinkGroup="ClassLibrary">PlayerPoints Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.PlayerPoints.PointsSum" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_0000000000000002.html" LinkGroup="ClassLibrary">PointsSum Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.QuestionBase" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_0000000000000007.html" LinkGroup="ClassLibrary">QuestionBase Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.QuestionBase.QuestionBase" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_000000000000000A.html" LinkGroup="ClassLibrary">QuestionBase Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.QuestionDisplayer" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_000000000000000B.html" LinkGroup="ClassLibrary">QuestionDisplayer Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.QuestionDisplayer.QuestionDisplayer" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_000000000000000C.html" LinkGroup="ClassLibrary">QuestionDisplayer Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.QuestionTemplate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_0000000000000013.html" LinkGroup="ClassLibrary">QuestionTemplate Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.QuestionTemplate.QuestionTemplate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_0000000000000017.html" LinkGroup="ClassLibrary">QuestionTemplate Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="SOLUTION-WIDE PROPERTIES Reference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_0000000000000018.html" LinkGroup="ClassLibrary">SOLUTION-WIDE PROPERTIES Reference</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.QuestionTemplate.correctAnswer" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_0000000000000015.html" LinkGroup="ClassLibrary">correctAnswer Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.QuestionBase.possibleQuestionsAmount" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_0000000000000009.html" LinkGroup="ClassLibrary">possibleQuestionsAmount Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.QuestionBase.questionBase" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_0000000000000008.html" LinkGroup="ClassLibrary">questionBase Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.QuestionTemplate.text" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_0000000000000014.html" LinkGroup="ClassLibrary">text Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ClassLibrary.QuestionTemplate.value" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ClassLibrary.chm::/topic_0000000000000016.html" LinkGroup="ClassLibrary">value Field</LItem>
+      </Links>
+   </Context>
+   
+
+</DynamicHelp>
+

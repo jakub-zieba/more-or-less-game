@@ -13,8 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Diagnostics;
 using System.Timers;
-using ClassLibrary;
-
 namespace MoreLess
 {
     /// <summary>
