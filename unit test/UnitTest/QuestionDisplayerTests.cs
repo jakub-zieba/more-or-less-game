@@ -2,7 +2,7 @@ using ClassLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace UnitTestProject3
+namespace UnitTest
 {
     [TestClass]
     public class QuestionDisplayerTests

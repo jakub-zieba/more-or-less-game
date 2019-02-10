@@ -1,7 +1,7 @@
 using ClassLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace UnitTestProject3
+namespace UnitTest
 {
     [TestClass]
     public class QuestionTemplateTests
@@ -16,8 +16,8 @@ namespace UnitTestProject3
         private QuestionTemplate CreateQuestionTemplate()
         {
             return new QuestionTemplate(
-          less,
-               equals,
+                less,
+                equals,
                 more);
         }
 
